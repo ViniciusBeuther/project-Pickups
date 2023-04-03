@@ -26,8 +26,8 @@ function verify() {
             window.alert ("Invalid Year. Try again using a valid year!")
         }  
 
-        //Check the car brand
-    if (gender = 'CHEVROLET')
+        //Chevrolet cars
+    if (brand = 'CHEVROLET')
     {
         if (yearsOld < 1960)
         {
@@ -58,26 +58,38 @@ function verify() {
             imageDiv = imageDiv.style.backgroundImage = "url(image/chevrolet-2010_f.jpg)"
         }
     }
-        //FORD PICKUPS
+        //Ford cars
         else
-            if (yearsOld <= 10)
+            if (yearsOld < 1960)
             {
-                
+                imageDiv = imageDiv.style.backgroundImage = "url(image/ford-1950.jpg)"
             }
-            else if (yearsOld > 10 && yearsOld < 20)
+            else if (yearsOld >= 1960 && yearsOld < 1970)
             {
-
+                imageDiv = imageDiv.style.backgroundImage = "url(image/ford-1960.jpg)"
             }
-            else if (yearsOld > 20 && yearsOld < 40)
+            else if (yearsOld >= 1970 && yearsOld < 1980)
             {
-
+                imageDiv = imageDiv.style.backgroundImage = "url(image/ford-1970.jpg)"
             }
-            else if (yearsOld > 40 && yearsOld < 80)
+            else if (yearsOld >= 1980 && yearsOld < 1990)
             {
-
+                imageDiv.style.backgroundImage = "url(image/ford-1980.jpg)"
+            }
+            else if (yearsOld >= 1990 && yearsOld < 2000)
+            {
+                imageDiv.style.backgroundImage = "url(image/ford-1990.jpg)"
+            }
+            else if (yearsOld >= 2000 && yearsOld < 2010)
+            {
+                imageDiv.style.backgroundImage = "url(image/ford-2000.jpg)"
+            }
+            else if (yearsOld >= 2010 && yearsOld < 2020)
+            {
+                imageDiv.style.backgroundImage = "url(image/ford-2010.jpg)"
             }
             else 
             {
-
+                imageDiv.style.backgroundImage = "url(image/ford-2020.jpg)"
             }
 }
